@@ -4,12 +4,14 @@ import "./styles.css";
 const foodList = {
   Indian: [
     { name: "Biryani", rating: "5/5" },
-    { name: "Dosa", rating: "4/5" }
+    { name: "Dosa", rating: "4/5" },
+    { name: "Rajma Chawal", rating: "3/5" }
   ],
 
   Arab: [
     { name: "Mandi", rating: "5/5" },
-    { name: "Shawarma", rating: "4/5" }
+    { name: "Shawarma", rating: "4/5" },
+    { name: "Fahsa", rating: "3/5" }
   ],
   Chinese: [
     {
@@ -19,6 +21,10 @@ const foodList = {
     {
       name: "Momos",
       rating: "4/5"
+    },
+    {
+      name: "Hakka noodles",
+      rating: "3/5"
     }
   ]
 };
@@ -31,7 +37,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>🥙 Foodstack </h1>
+      <h1>
+        <span>🍲</span> Foodstack{" "}
+      </h1>
       <h3>Check out my favourite food! Select a cuisine to get started 👇</h3>
 
       <div>
